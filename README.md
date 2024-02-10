@@ -19,6 +19,6 @@ terraform init
 terraform apply -auto-approve
 ```
 - Note that it is assumed that you have already created aws-ssh-key pairs named `server-key`. 
-- You can also use the keys created by your self and tell Terraform to load and use the related public-key. This line is commented currently. To use uncomment line #163 and also provide the location of your public-keu inside the var file.
+- You can also use the keys created by your self and tell Terraform to load and use the related public-key. This line is commented currently. To use, uncomment line #163 and also provide the location of your public-key inside the var file.
 - Output param name `myapp_server_ip` will print the IP address of machine.
-- This Terraform script will execute `initiaScript.sh` once machine is ready to install `docker` and `docker-compose`. You can change it as desire.  
+- This Terraform playbook will execute `initiaScript.sh` file once machine is ready and install `docker` and `docker-compose`. You can change it as desire.  
